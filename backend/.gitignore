@@ -1,0 +1,18 @@
+
+
+# Environnement virtuel Python
+venv/
+env/
+ENV/
+
+# Cache Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Logs et divers
+*.log
+.DS_Store
+
+
+
