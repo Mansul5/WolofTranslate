@@ -16,7 +16,7 @@ export default function Home() {
     setSearched(true);
 
     try {
-      const res = await fetch(`http://127.0.0.1:8000/search?q=${encodeURIComponent(query)}`);
+      const res = await fetch(`https://woloftranslate.onrender.com/search?q=${encodeURIComponent(query)}`);
       const data = await res.json();
       setResults(data.results || []);
     } catch (error) {
@@ -41,7 +41,7 @@ export default function Home() {
             </span>
           </div>
           <span className="text-xs font-medium text-gray-500 hidden sm:inline-block">
-            Projet Open Source • FR ⇄ WO
+            Projet expérimental • FR ⇄ WO
           </span>
         </div>
       </header>
@@ -129,7 +129,7 @@ export default function Home() {
       {/* FOOTER */}
       <footer className="w-full py-6 px-6 text-center border-t border-gray-200/60 bg-white/40 mt-12">
         <p className="text-sm text-gray-500">
-          Développé avec <span className="text-red-500">❤️</span> pour valoriser la langue wolof. &copy; 2026 Souleymane Thiao. 
+          Développé avec <span className="text-red-500">🤍</span> pour valoriser la langue wolof. &copy; 2026 Souleymane Thiao. 
 
         </p>
         
